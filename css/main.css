@@ -75,7 +75,7 @@ a {
 }
 
 .hello {
-  background: url(../../img/bg/bg-hello.jpeg) center center/cover no-repeat, #86b5ff;
+  background: url(../../img/bg/hello-bg.jpg) center center/cover no-repeat, #86b5ff;
   background-blend-mode: multiply;
   /*background-size: 100%;*/
   height: 100vh;
@@ -428,7 +428,7 @@ a {
 }
 
 .order-section {
-  background: url(../../img/bg/bg-form.jpeg) top 25% center/cover no-repeat, #2B2B2B;
+  background: url(../../img/bg/form-bg.jpg) top 25% center / cover no-repeat, #2B2B2B;
   /*background-size: 100% 100%;*/
   background-blend-mode: multiply;
   color: #fff;
