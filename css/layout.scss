@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Alegreya Sans', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $baseFontSize;
+  line-height: 1.42;
+  color: #666666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin: 0;
+  background: #313131;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: $containerWidth + 20px;
+  /*position: relative;*/
+}
+
+/*.wrapper__content {
+  flex: 1;
+}*/
+
+.container {
+  width: $containerWidth;
+  margin: 0 auto;
+
+ 
+}

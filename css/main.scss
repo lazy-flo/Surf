@@ -1,0 +1,32 @@
+$containerWidth:  940px;
+$baseFontSize: 18px;
+
+//colors
+$yellow: #FEDB3F;
+$grey:  #666666;
+$black: #292929;
+
+//z-indexes
+$z-fixed-menu: 100;
+
+
+//normalize
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap');
+@import "layout";
+@import "components/hello.scss";
+@import "components/header.scss";
+@import "components/features.scss";
+@import "components/feature.scss";
+@import "components/btn.scss";
+@import "components/section.scss";
+@import "components/headline.scss";
+@import "components/advantages.scss";
+@import "components/reviews.scss";
+@import "components/interactive-avatar.scss";
+@import "components/order-section.scss";
+@import "components/form.scss";
+@import "components/radio.scss";
+@import "components/fixed-menu.scss";

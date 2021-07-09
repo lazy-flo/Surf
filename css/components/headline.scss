@@ -1,0 +1,35 @@
+.headline {
+  text-align: center;
+}
+.headline__title {
+  margin-bottom: 17px;
+}
+.headline__subtitle {
+  padding: 0 27%;
+  margin-bottom: 49px;
+}
+.headline__list {
+ display: flex;
+
+}
+
+.headline__item {
+  flex: 1;
+  margin: 0 2%;
+  position: relative;
+  
+  &:before {
+    content: url("../../img/icon/separator.png");
+    position: absolute;
+    top: 30%;
+    right: 0;
+    transform: translateX(50%);
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
