@@ -18,13 +18,13 @@
   margin: 0 2%;
   position: relative;
   
-  &:before {
-    content: url("../../img/icon/separator.png");
+  /*&:before {
+    content: url(../../img/icon/separator.png);
     position: absolute;
     top: 30%;
     right: 0;
     transform: translateX(50%);
-  }
+  }*/
 
   &:first-child {
     margin-left: 0;
