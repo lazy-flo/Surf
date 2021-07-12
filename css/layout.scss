@@ -62,6 +62,7 @@ a {
 .container {
   width: $containerWidth;
   margin: 0 auto;
+  z-index: $z-overlay;
 
  
 }

@@ -8,6 +8,7 @@ $black: #292929;
 
 //z-indexes
 $z-fixed-menu: 100;
+$z-overlay: 2;
 
 
 //normalize
@@ -17,6 +18,7 @@ $z-fixed-menu: 100;
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap');
 @import "layout";
 @import "components/maincontent";
+@import "components/_overlay.scss";
 @import "components/_hello.scss";
 @import "components/_header.scss";
 @import "components/_features.scss";
@@ -28,6 +30,7 @@ $z-fixed-menu: 100;
 @import "components/_reviews.scss";
 @import "components/_interactive-avatar.scss";
 @import "components/order-section";
+@import "components/visually-hidden";
 @import "components/_form.scss";
 @import "components/_radio.scss";
 @import "components/_fixed-menu.scss";

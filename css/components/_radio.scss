@@ -23,7 +23,10 @@
   }
 }
 .radio__elem {
- display: none;
+ 
+  .visually-hidden:focus ~ .radio_visible {
+    background: purple;
+  }
 
   &:checked ~ .radio__visible{
     &:before {

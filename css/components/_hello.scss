@@ -1,6 +1,6 @@
 .hello {
-background: url(../img/bg/hello-bg.jpg) center center / cover no-repeat, #86b5ff;
-background-blend-mode: multiply;
+background: url(../img/bg/hello-bg.jpg) center center / cover no-repeat;
+/*background-blend-mode: multiply;*/
 color: #fff;
 
 }
@@ -10,6 +10,7 @@ color: #fff;
   justify-content: space-between;
   min-height: 100%;
   padding: 24px 0 70px 0;
+
 }
 .hello__main {
   min-height: 315px;

@@ -65,14 +65,30 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 /*.maincontent {
   background: #fff;
 }*/
+.overlay {
+  position: relative;
+}
+.overlay:before {
+  content: "";
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: #2B2B2B;
+  opacity: 0.4;
+}
+
 .hello {
-  background: url(../img/bg/hello-bg.jpg) center center/cover no-repeat, #86b5ff;
-  background-blend-mode: multiply;
+  background: url(../img/bg/hello-bg.jpg) center center/cover no-repeat;
+  /*background-blend-mode: multiply;*/
   color: #fff;
 }
 
@@ -354,15 +370,21 @@ a {
 }
 
 .order-section {
-  background: url(../img/bg/form-bg.jpg) top 25% center/cover no-repeat, #2B2B2B;
-  /*background-size: 100% 100%;*/
-  background-blend-mode: multiply;
+  background: url(../img/bg/form-bg.jpg) top 25% center/cover no-repeat;
   color: #fff;
 }
 
 .order-section__title {
   text-transform: uppercase;
   color: #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .form {
@@ -438,8 +460,8 @@ a {
   height: 10px;
 }
 
-.radio__elem {
-  display: none;
+.radio__elem .visually-hidden:focus ~ .radio_visible {
+  background: purple;
 }
 .radio__elem:checked ~ .radio__visible:before {
   display: block;
