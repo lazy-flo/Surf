@@ -1,11 +1,8 @@
 .hello {
 background: url(../img/bg/hello-bg.jpg) center center / cover no-repeat, #86b5ff;
 background-blend-mode: multiply;
-/*background-size: 100%;*/
-
-height: 100vh;
-min-height: 652px;
 color: #fff;
+
 }
 .hello__container {
   display: flex;

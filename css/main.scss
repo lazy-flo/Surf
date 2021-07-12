@@ -16,6 +16,7 @@ $z-fixed-menu: 100;
 //setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap');
 @import "layout";
+@import "components/maincontent";
 @import "components/_hello.scss";
 @import "components/_header.scss";
 @import "components/_features.scss";
