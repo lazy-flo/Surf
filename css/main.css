@@ -460,8 +460,8 @@ a {
   height: 10px;
 }
 
-.radio__elem .visually-hidden:focus ~ .radio_visible {
-  background: purple;
+.radio__elem:focus ~ .radio_visible {
+  background: #ccc;
 }
 .radio__elem:checked ~ .radio__visible:before {
   display: block;

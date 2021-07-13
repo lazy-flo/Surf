@@ -23,10 +23,11 @@
   }
 }
 .radio__elem {
- 
-  .visually-hidden:focus ~ .radio_visible {
-    background: purple;
+  
+ &:focus ~ .radio_visible {
+    background: #ccc;
   }
+  
 
   &:checked ~ .radio__visible{
     &:before {
