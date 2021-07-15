@@ -1,5 +1,10 @@
-$containerWidth:  940px;
+$containerWidth: 940px;
 $baseFontSize: 18px;
+$mainFontSize: 16px;
+
+//breakpoints
+$tablets: 768px;
+$phone: 480px;
 
 //colors
 $yellow: #FEDB3F;
@@ -9,6 +14,9 @@ $black: #292929;
 //z-indexes
 $z-fixed-menu: 100;
 $z-overlay: 2;
+
+//media
+@import "./media.scss";
 
 
 //normalize
@@ -21,6 +29,9 @@ $z-overlay: 2;
 @import "components/_overlay.scss";
 @import "components/_hello.scss";
 @import "components/_header.scss";
+@import "components/_menu.scss";
+@import "components/_contacts.scss";
+@import "components/_hamburger.scss";
 @import "components/_features.scss";
 @import "components/_feature.scss";
 @import "components/_btn.scss";
@@ -33,4 +44,7 @@ $z-overlay: 2;
 @import "components/_visually-hidden.scss";
 @import "components/_form.scss";
 @import "components/_radio.scss";
+@import "components/_map.scss";
+@import "components/_footer.scss";
+@import "components/_socials.scss";
 @import "components/_fixed-menu.scss";

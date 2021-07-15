@@ -1,0 +1,37 @@
+.footer {
+  background: #fff;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+
+  @include phone {
+    flex-direction: column;
+  }
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phone {
+    flex-direction: column;
+  }
+}
+  
+.footer__col {
+
+  display: flex;
+  flex-direction: column;
+
+  @include phone {
+    align-items: center;
+  }
+}
+.address {
+  font-style: regular;
+  font-size: rem(21px);
+}

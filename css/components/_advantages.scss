@@ -4,34 +4,58 @@
   align-items: center;
   text-align: center;
 
+  @include phone {
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+  }
+
+}
+.advantages__icon {
+  @include phone {
+    margin-right: rem(12px);
+    text-align: center;
+  }
 }
 .advantages__icon-wrapper{
   display: inline-flex;
-  width: 128px;
-  height: 128px;
+  width: rem(128px);
+  height: rem(128px);
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  /*position: relative;*/
-  display: flex;
+  position: relative;
+  /*display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+  justify-content: center;*/
+  margin-bottom: rem(20px);
+
+  @include phone {
+    margin-bottom: 0;
+  }
 }
 .advantages__pic {
-  width: 68px;
-  height: 68px;
+  width: rem(72px);
+  height: rem(68px);
   object-fit: contain;
-  /*position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
+
+ /* &--w--small {
+    width: rem(50px);
+  }*/
 
 }
 .advantages__title {
   color: #292929;
   font-weight: bold;
-font-size: 27px;
-line-height: 32px;
-margin-bottom: 20px;
+  font-size: rem(27px);
+  line-height: rem(32px);
+  margin-bottom: rem(20px);
+
+  @include phone {
+    margin-bottom: rem(9px);
+  }
 }

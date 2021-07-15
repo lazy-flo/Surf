@@ -1,12 +1,12 @@
 .btn {
   color: black;
-  font-weight: 800;
-font-size: 16px;
-line-height: 18px;
+  font-weight: bold;
+font-size: rem(16px);
+line-height: rem(18px);
 text-transform: uppercase;
 background: #FEDB3F;
-padding: 21px 41px;
-border-radius: 100px;
+padding: rem(21px) rem(41px);
+border-radius: rem(100px);
 border: none;
 transition: 0.3s;
 
