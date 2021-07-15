@@ -168,6 +168,16 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    background: #1968B1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 1.875rem 1.625rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .header__contacts {
