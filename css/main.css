@@ -688,7 +688,7 @@ a {
   border-radius: 0.25rem;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(../img/icon/yes.svg) center center no-repeat;
+  background: url(../img/icon/all/yes.svg) center center no-repeat;
   width: 0.625rem;
   height: 0.625rem;
 }
@@ -728,7 +728,7 @@ a {
   min-height: 16.25rem;
 }
 .map:before {
-  content: url(../img/icon/point.svg);
+  content: url(../img/icon/all/point.svg);
   position: absolute;
   top: 49%;
   left: 58%;
@@ -793,7 +793,7 @@ a {
   width: 1.5rem;
   height: 1.5rem;
   fill: #B3B3B3;
-  transition: fill 0.5;
+  transition: 0.3s;
 }
 .socials__pic:hover {
   fill: black;
