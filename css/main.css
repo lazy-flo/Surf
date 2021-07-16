@@ -210,6 +210,13 @@ a {
   margin-right: 0;
 }
 
+.menu__link {
+  transition: 0.3s;
+}
+.menu__link:hover {
+  color: #FEDB3F;
+}
+
 .contacts__phone {
   font-weight: bold;
   font-size: 1.375rem;

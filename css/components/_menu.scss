@@ -22,3 +22,10 @@
 
    }
 }
+.menu__link {
+  transition: 0.3s;
+  &:hover {
+    color: $yellow;
+
+  }
+}
