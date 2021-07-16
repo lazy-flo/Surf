@@ -688,7 +688,7 @@ a {
   border-radius: 0.25rem;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(../img/icon/checkbox.svg) center center no-repeat;
+  background: url(../img/icon/yes.svg) center center no-repeat;
   width: 0.625rem;
   height: 0.625rem;
 }
