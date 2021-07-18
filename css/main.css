@@ -731,12 +731,12 @@ a {
 }
 @media screen and (max-width: 480px) {
   .form__controls--mb {
-    margin-bottom: 2.375rem;
+    margin-bottom: 2.25rem;
   }
 }
 @media screen and (max-width: 375px) {
   .form__controls--mb {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.625rem;
   }
 }
 
@@ -753,7 +753,7 @@ a {
 }
 @media screen and (max-width: 375px) {
   .forms__btns {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.875rem;
   }
 }
 

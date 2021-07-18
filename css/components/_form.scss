@@ -88,11 +88,11 @@
     margin-bottom: rem(46px);
 
     @include phone {
-      margin-bottom: rem(38px);
+      margin-bottom: rem(36px);
     }
 
     @include smallPhone {
-      margin-bottom: rem(20px);
+      margin-bottom: rem(26px);
     }
 
   }
@@ -110,6 +110,6 @@
   }
 
   @include smallPhone {
-    margin-bottom: rem(20px);
+    margin-bottom: rem(30px);
   }
 }
