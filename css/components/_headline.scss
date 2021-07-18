@@ -12,12 +12,14 @@
   @include phone {
     padding: 0;
   }
+
 }
 .headline__list {
  display: flex;
 
  @include phone {
    flex-direction: column;
+   margin: 0;
  }
 
 }

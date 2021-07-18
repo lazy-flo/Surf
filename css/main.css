@@ -5,10 +5,15 @@ html {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
   html {
     font-size: 11px;
   }
@@ -150,6 +155,11 @@ a {
   line-height: 3.625rem;
   margin-bottom: 1.0625rem;
 }
+@media screen and (max-width: 480px) {
+  .hello__main-title {
+    font-size: 2.5rem;
+  }
+}
 
 .hello__main-desc {
   margin-bottom: 3.4375rem;
@@ -223,6 +233,11 @@ a {
   line-height: 1.125rem;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .contacts__phone {
+    margin-bottom: 1.1875rem;
+  }
 }
 
 .contacts__icon {
@@ -329,6 +344,11 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  .section {
+    min-height: initial;
+  }
+}
 
 .section__title {
   color: #292929;
@@ -337,6 +357,16 @@ a {
   line-height: 3.625rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section__title {
+    font-size: 2.125rem;
+  }
 }
 
 .headline {
@@ -363,6 +393,7 @@ a {
 @media screen and (max-width: 480px) {
   .headline__list {
     flex-direction: column;
+    margin: 0;
   }
 }
 
@@ -465,10 +496,21 @@ a {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .advantages__desc {
+    font-size: 1.125rem;
+  }
+}
+
 .reviews__card {
   background: #F8FAF9;
   padding: 2.625rem;
   margin-bottom: 1.125rem;
+}
+@media screen and (max-width: 375px) {
+  .reviews__card {
+    padding: 0.625rem 0.25rem;
+  }
 }
 
 .reviews__card-inner {
@@ -629,6 +671,16 @@ a {
 .form__row:last-child {
   margin-bottom: 0;
 }
+@media screen and (max-width: 480px) {
+  .form__row:last-child {
+    margin-bottom: 0.375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__row {
+    margin-bottom: 0.625rem;
+  }
+}
 
 .form__block {
   flex: 1;
@@ -638,6 +690,11 @@ a {
   margin-right: 0;
 }
 
+/*.form__title {
+  @include smallPhone {
+    font-size: rem(18px);
+  }
+}*/
 .form__input {
   width: 100%;
   border: none;
@@ -654,6 +711,11 @@ a {
   resize: none;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 480px) {
+  .form__input {
+    padding: 0.5rem 0.25rem;
+  }
+}
 
 .form__controls {
   display: flex;
@@ -667,11 +729,31 @@ a {
 .form__controls--mb {
   margin-bottom: 2.875rem;
 }
+@media screen and (max-width: 480px) {
+  .form__controls--mb {
+    margin-bottom: 2.375rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .form__controls--mb {
+    margin-bottom: 1.25rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .forms__btns {
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .forms__btns {
+    margin-bottom: 5.0625rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .forms__btns {
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -743,17 +825,21 @@ a {
 
 .footer {
   background: #fff;
-}
-
-.footer {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 1.5rem 0;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 1.75rem 1.875rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .footer {
     flex-direction: column;
+    padding: 1.25rem 0 2.1875rem;
   }
 }
 
@@ -779,14 +865,21 @@ a {
 }
 
 .address {
-  font-style: regular;
+  font-style: normal;
+  font-weight: 400;
   font-size: 1.3125rem;
+}
+@media screen and (max-width: 480px) {
+  .address {
+    margin-bottom: 0.75rem;
+  }
 }
 
 .socials {
   display: flex;
   /* justify-content: center;*/
   align-items: center;
+  margin: 0;
 }
 
 .socials__item {

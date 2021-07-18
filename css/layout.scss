@@ -2,9 +2,13 @@ html {
   font-size: $mainFontSize;
 
   @include tablets {
-    font-size: $mainFontSize - 2px;
+    font-size: $mainFontSize - 1px;
   }
   @include phone {
+    font-size: $mainFontSize - 2px;
+  }
+
+  @include smallPhone {
     font-size: $mainFontSize - 5px;
   }
 }

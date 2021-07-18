@@ -42,6 +42,10 @@ color: #fff;
   line-height: rem(58px);
   margin-bottom: rem(17px);
 
+  @include phone {
+    font-size: rem(40px);
+  }
+
 }
 .hello__main-desc {
   margin-bottom: rem(55px);

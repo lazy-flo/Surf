@@ -5,6 +5,10 @@
   line-height: rem(18px);
   display: flex;
   align-items: center;
+
+  @include phone {
+    margin-bottom: rem(19px);
+  }
 }
 .contacts__icon {
   flex-shrink: 0;

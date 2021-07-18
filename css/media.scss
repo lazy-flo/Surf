@@ -12,3 +12,9 @@
     @content;
   }
 }
+
+@mixin smallPhone {
+  @media screen and (max-width:$smallPhone) {
+    @content;
+  }
+}

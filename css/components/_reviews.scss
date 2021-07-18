@@ -2,6 +2,10 @@
   background: #F8FAF9;
   padding: rem(42px);
   margin-bottom: rem(18px);
+
+  @include smallPhone {
+    padding: rem(10px) rem(4px);
+  }
 }
 .reviews__card-inner {
   display: flex;
@@ -57,6 +61,7 @@
   @include tablets {
     width: 100%;
   }
+
 }
 .reviews__author {
   color: #292929;

@@ -5,6 +5,10 @@
   flex-direction: column;
   justify-content: center;
 
+  @include phone {
+    min-height: initial;
+  }
+
  
 }
 .section__title {
@@ -14,4 +18,12 @@
   line-height: rem(58px);
   margin-bottom: rem(32px);
   text-align: center;
+
+  @include phone {
+    font-size: rem(40px);
+  }
+
+  @include smallPhone {
+    font-size: rem(34px);
+  }
 }

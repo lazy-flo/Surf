@@ -1,15 +1,19 @@
+
 .footer {
   background: #fff;
-}
-.footer {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  padding: rem(24px) 0;
 
+  @include tablets {
+    padding: rem(28px) rem(30px);
+  }
 
   @include phone {
     flex-direction: column;
+    padding: rem(20px) 0 rem(35px);
   }
 }
 .footer__container {
@@ -32,6 +36,11 @@
   }
 }
 .address {
-  font-style: regular;
+  font-style: normal;
+  font-weight: 400;
   font-size: rem(21px);
+  
+  @include phone {
+    margin-bottom: rem(12px);
+  }
 }
