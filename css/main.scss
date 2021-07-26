@@ -15,6 +15,7 @@ $black: #292929;
 //z-indexes
 $z-fixed-menu: 100;
 $z-overlay: 2;
+$z-fullscreen-menu: 120;
 
 //media
 @import "./media.scss";
@@ -52,4 +53,5 @@ $z-overlay: 2;
 @import "components/_market.scss";
 @import "components/_boards.scss";
 @import "components/_drop.scss";
+@import "components/_fullscreen-menu.scss";
 

@@ -12,6 +12,26 @@
   line-height: rem(30px);
   flex-wrap: wrap;
   justify-content: center;
+
+  &--vertical {
+    flex-direction: column;
+    padding: rem(135px) rem(258px);
+    font-size: rem(36px);
+    line-height: rem(72px);
+
+    @include tablets {
+      padding: rem(135px) 0;
+    }
+
+    @include phone {
+      font-size: rem(28px);
+    }
+
+    @include smallPhone {
+      font-size: rem(24px);
+      padding: rem(70px) 0;
+    }
+  }  
 }
 .menu__item {
   margin-right: rem(22px);
@@ -21,6 +41,10 @@
     margin-right: 0;
 
    }
+
+   &--mb {
+    margin-bottom: rem(30px);
+  }
 }
 .menu__link {
   transition: 0.3s;
