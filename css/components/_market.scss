@@ -1,0 +1,24 @@
+.market {
+  background: #F8FAF9;
+  display: flex;
+
+}
+.market__slider {
+  display: flex;
+  align-items: center;
+}
+.market__arrow{
+
+&-img {
+  width: 14px;
+  height: 28px;
+  fill: transparent;
+
+  &--right {
+    transform: rotate(180deg);
+  }
+}
+}
+.market__item {
+  margin: 0 rem(34px);
+}
