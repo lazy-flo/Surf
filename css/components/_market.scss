@@ -4,20 +4,49 @@
 
 }
 .market__slider {
+ 
   display: flex;
   align-items: center;
+  position: relative;
+  
 }
-.market__arrow{
+.market__arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
 
-&-img {
-  width: 14px;
-  height: 28px;
-  fill: transparent;
+@include tablets {
+  top: 25%;
+  
+}
 
-  &--right {
+  &--pos--right {
+    right: 0;
     transform: rotate(180deg);
+
+    @include tablets {
+      right: 10%;
+    }
+    @include phone {
+      right: 0;
+    }
   }
+  &--pos--left {
+    left: 0;
+
+    @include tablets {
+      left: 10%;
+    }
+    @include phone {
+      right: 0;
+    }
+  }
+
 }
+.market__arrow-img {
+  width: rem(14px);
+  height: rem(28px);
+  fill: transparent;
 }
 .market__item {
   margin: 0 rem(34px);

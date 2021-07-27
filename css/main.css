@@ -972,15 +972,51 @@ a {
 .market__slider {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.market__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .market__arrow {
+    top: 25%;
+  }
+}
+.market__arrow--pos--right {
+  right: 0;
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 768px) {
+  .market__arrow--pos--right {
+    right: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .market__arrow--pos--right {
+    right: 0;
+  }
+}
+.market__arrow--pos--left {
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  .market__arrow--pos--left {
+    left: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .market__arrow--pos--left {
+    right: 0;
+  }
 }
 
 .market__arrow-img {
-  width: 14px;
-  height: 28px;
+  width: 0.875rem;
+  height: 1.75rem;
   fill: transparent;
-}
-.market__arrow-img--right {
-  transform: rotate(180deg);
 }
 
 .market__item {
