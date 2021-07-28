@@ -55,6 +55,11 @@ $z-fullscreen-menu: 120;
 @import "components/_drop.scss";
 @import "components/_fullscreen-menu.scss";
 
+
+
+.team__title {
+  margin-bottom: rem(52px);
+}
 .team__list {
   display: flex;
  
@@ -72,6 +77,17 @@ $z-fullscreen-menu: 120;
   display: flex;
   justify-content: center;
 }
+.staff__link  {
+
+  &:after {
+    content: url(../img/icon/all/triangle.svg);
+    width: 9px;
+    height: 9px;
+    margin-left: 9px;
+
+
+  }
+}
  .staff__title {
    font-size: rem(21px);
    font-weight: bold;
@@ -87,6 +103,9 @@ $z-fullscreen-menu: 120;
 
  }
  .staff__hidden {
+   height: 0;
+   overflow: hidden;
+   transition: height 0.5s;
 
  }
  .staff__occupation {

@@ -1244,6 +1244,10 @@ a {
   fill: white;
 }
 
+.team__title {
+  margin-bottom: 3.25rem;
+}
+
 .team__list {
   display: flex;
 }
@@ -1265,6 +1269,13 @@ a {
   justify-content: center;
 }
 
+.staff__link:after {
+  content: url(../img/icon/all/triangle.svg);
+  width: 9px;
+  height: 9px;
+  margin-left: 9px;
+}
+
 .staff__title {
   font-size: 1.3125rem;
   font-weight: bold;
@@ -1278,6 +1289,12 @@ a {
   width: 0;
   height: 0;
   border-bottom-color: black;
+}
+
+.staff__hidden {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
 }
 
 .staff__occupation {
