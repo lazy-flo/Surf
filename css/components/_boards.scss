@@ -9,8 +9,14 @@
   width: 50%;
   margin-right: 3%;
   position: relative;
+  &--blue {
+    background: url(../img/market/blue-dord.png) center center / contain no-repeat, url(../img/market/cloud.svg) center center / contain no-repeat;
+  }
 
-  background: url(../img/market/blue-dord.png) center center / contain no-repeat, url(../img/market/cloud.svg) center center / contain no-repeat;
+  &--orange {
+    background: url(../img/market/orange-dord.png) center center / contain no-repeat, url(../img/market/cloud.svg) center center / contain no-repeat;
+  }
+
     
  /* &::before {
     content: "";
@@ -59,6 +65,7 @@
 
   &:hover .boards__dropdown {
     opacity: 0.9;
+    left: 100%;
 
   }
 
@@ -76,11 +83,9 @@
    /* flex: 1;*/ 
     position: absolute;
     top: 0;
-    left: 100%;
+    left: -9999px;
     min-width: rem(273px);
-    opacity: 0;
-    pointer-events: none;
-    
+    opacity: 0;    
 
     &:before {
       content: "";

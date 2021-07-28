@@ -1028,7 +1028,6 @@ a {
   width: 50%;
   margin-right: 3%;
   position: relative;
-  background: url(../img/market/blue-dord.png) center center/contain no-repeat, url(../img/market/cloud.svg) center center/contain no-repeat;
   /* &::before {
      content: "";
      position: absolute;
@@ -1038,6 +1037,12 @@ a {
      z-index: -3;
      top: 12%;
    }*/
+}
+.boards__img--blue {
+  background: url(../img/market/blue-dord.png) center center/contain no-repeat, url(../img/market/cloud.svg) center center/contain no-repeat;
+}
+.boards__img--orange {
+  background: url(../img/market/orange-dord.png) center center/contain no-repeat, url(../img/market/cloud.svg) center center/contain no-repeat;
 }
 @media screen and (max-width: 768px) {
   .boards__img {
@@ -1077,6 +1082,7 @@ a {
 }
 .boards__btn:hover .boards__dropdown {
   opacity: 0.9;
+  left: 100%;
 }
 @media screen and (max-width: 768px) {
   .boards__btn {
@@ -1092,10 +1098,9 @@ a {
   /* flex: 1;*/
   position: absolute;
   top: 0;
-  left: 100%;
+  left: -9999px;
   min-width: 17.0625rem;
   opacity: 0;
-  pointer-events: none;
 }
 .boards__dropdown:before {
   content: "";
@@ -1251,9 +1256,19 @@ a {
 .team__list {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .team__list {
+    flex-direction: column;
+  }
+}
 
 .team__item {
   margin-right: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    margin-bottom: 16px;
+  }
 }
 
 .staff {
@@ -1263,17 +1278,21 @@ a {
 .staff__photo {
   margin-bottom: 1.375rem;
 }
-
-.staff__visible {
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 768px) {
+  .staff__photo {
+    display: none;
+  }
 }
 
+/*.staff__visible {
+  display: flex;
+  justify-content: center;
+}*/
 .staff__link:after {
   content: url(../img/icon/all/triangle.svg);
-  width: 9px;
-  height: 9px;
-  margin-left: 9px;
+  width: 0.5625rem;
+  height: 0.5625rem;
+  margin-left: 0.25rem;
 }
 
 .staff__title {
@@ -1295,6 +1314,25 @@ a {
   height: 0;
   overflow: hidden;
   transition: height 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .staff__hidden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.staff__hidden-img {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .staff__hidden-img {
+    display: block;
+    width: 222px;
+    height: 290px;
+    margin-bottom: 20px;
+  }
 }
 
 .staff__occupation {

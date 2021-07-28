@@ -62,28 +62,41 @@ $z-fullscreen-menu: 120;
 }
 .team__list {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+
+  }
  
  }
  .team__item {
    margin-right: rem(20px);
+
+   @include tablets {
+    margin-bottom: 16px;
+   }
  }
  .staff {
    text-align: center;
  }
  .staff__photo {
    margin-bottom: rem(22px);
+
+   @include tablets {
+     display: none;
+   }
  }
-.staff__visible {
+/*.staff__visible {
   display: flex;
   justify-content: center;
-}
+}*/
 .staff__link  {
 
   &:after {
     content: url(../img/icon/all/triangle.svg);
-    width: 9px;
-    height: 9px;
-    margin-left: 9px;
+    width: rem(9px);
+    height: rem(9px);
+    margin-left: rem(4px);
 
 
   }
@@ -106,7 +119,23 @@ $z-fullscreen-menu: 120;
    height: 0;
    overflow: hidden;
    transition: height 0.5s;
+   
+   @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
 
+ }
+ .staff__hidden-img{
+   display: none;
+
+   @include tablets {
+     display: block;
+     width: 222px;
+     height: 290px;
+     margin-bottom: 20px;
+   }
  }
  .staff__occupation {
    color: black;
