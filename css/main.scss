@@ -55,3 +55,42 @@ $z-fullscreen-menu: 120;
 @import "components/_drop.scss";
 @import "components/_fullscreen-menu.scss";
 
+.team__list {
+  display: flex;
+ 
+ }
+ .team__item {
+   margin-right: rem(20px);
+ }
+ .staff {
+   text-align: center;
+ }
+ .staff__photo {
+   margin-bottom: rem(22px);
+ }
+.staff__visible {
+  display: flex;
+  justify-content: center;
+}
+ .staff__title {
+   font-size: rem(21px);
+   font-weight: bold;
+   color: black;
+   margin-right: rem(4px);
+   margin-bottom: rem(8px);
+ }
+ .staff__triangle {
+   border: rem(9px) solid transparent;
+   width: 0;
+   height: 0;
+   border-bottom-color: black;
+
+ }
+ .staff__hidden {
+
+ }
+ .staff__occupation {
+   color: black;
+   margin-bottom: rem(4px);
+ }
+    

@@ -79,6 +79,7 @@
     left: 100%;
     min-width: rem(273px);
     opacity: 0;
+    pointer-events: none;
     
 
     &:before {
