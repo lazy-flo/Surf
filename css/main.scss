@@ -141,4 +141,25 @@ $z-fullscreen-menu: 120;
    color: black;
    margin-bottom: rem(4px);
  }
-    
+
+ .bx-wrapper{
+  box-shadow: none;
+  border: none;
+  background: #F8FAF9;
+  max-width: none;
+ }
+ 
+
+ .bx-wrapper .bx-controls-direction a {
+right: -3%;
+
+@include tablets {
+  top: 25%;
+  right: 0;
+}
+
+ }
+ .bx-prev {
+   margin-right: 20px;
+ }
+

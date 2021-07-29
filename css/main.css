@@ -1012,7 +1012,7 @@ a {
 }
 
 .market__item {
-  margin: 0 2.125rem;
+  /* margin: 0 rem(34px);*/
 }
 
 .boards__container {
@@ -1338,4 +1338,25 @@ a {
 .staff__occupation {
   color: black;
   margin-bottom: 0.25rem;
+}
+
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  background: #F8FAF9;
+  max-width: none;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  right: -3%;
+}
+@media screen and (max-width: 768px) {
+  .bx-wrapper .bx-controls-direction a {
+    top: 25%;
+    right: 0;
+  }
+}
+
+.bx-prev {
+  margin-right: 20px;
 }

@@ -9,6 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap"
     rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
   <link rel="stylesheet" href="./css/main.css">
 
   <title>SurfBoards | Main</title>
@@ -171,12 +177,12 @@
       <section class="section market">
         <div class="container">
           <div class="market__slider">
-            <a href="#" class="market__arrow market__arrow--pos--left" id="left">
+           <!-- <a href="#" class="market__arrow market__arrow--pos--left" id="left">
               <svg class="market__arrow-img">
                 <use xlink:href="./img/icon/sprite.svg#left"></use>
               </svg>
-            </a>
-            <ul class="market__list">
+            </a>-->
+            <ul class="market__list bxslider">
               <li class="market__item boards">
                 <div class="boards__container">
 
@@ -274,12 +280,12 @@
 
                 </div>
               </li>
-              <!--<li class="market__item boards">
+              <li class="market__item boards">
                 <div class="boards__container">
 
-                  <div class="boards__img boards__img--orange">-->
-                    <!--<img src="./img/market/blue-dord.png" alt="" class="boards__pic">-->
-                  <!--</div>
+                  <div class="boards__img boards__img--orange">
+
+                  </div>
 
                   <div class="boards__content">
                     <div class="boards__btn">
@@ -342,9 +348,11 @@
                     </div>
                     <div class="boards__desc">
                       <div class="boards__text">
-                        <p>Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание 
+                        <p>Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать
+                          скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры
+                          (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание
                           в трубах.
-                          
+
                         </p>
                       </div>
                       <div class="boards__details">
@@ -370,13 +378,13 @@
                   </div>
 
                 </div>
-              </li>-->
+              </li>
             </ul>
-            <a href="#" class="market__arrow market__arrow--pos--right" id="right">
+            <!--<a href="#" class="market__arrow market__arrow--pos--right" id="right">
               <svg class="market__arrow-img">
                 <use xlink:href="./img/icon/sprite.svg#left"></use>
               </svg>
-            </a>
+            </a>-->
 
 
           </div>
@@ -391,7 +399,7 @@
               <img class="staff__photo" src="./img/team/staff-1.jpg">
               <div class="staff__content">
                 <!--<div class="staff__visible">-->
-                <a  href="#" class="staff__link staff__title">Борис Федорович</a>
+                <a href="#" class="staff__link staff__title">Борис Федорович</a>
                 <!-- <div class="staff__triangle"></div>
                 </div>-->
                 <div class="staff__hidden">
@@ -703,6 +711,13 @@
 
   <script src="./one.js"></script>
   <script src="./accord.js"></script>
+  <script>$(document).ready(function () {
+      $('.bxslider').bxSlider({
+        autoControls: true,
+      })
+      
+    });
+    </script>
 
 
 

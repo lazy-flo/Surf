@@ -29,7 +29,7 @@ menuList.addEventListener('click', (e) => {
 })
 
 modalBtn.addEventListener('click', (e) => {
-  e.preventDefault()
+  e.preventDefault();
   openMenu();
 });
 
