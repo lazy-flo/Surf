@@ -10,6 +10,8 @@ team.addEventListener('click', function (evt) {
 
   if(link.classList.contains('staff__link')) {
     const activeItem = team.querySelector('.staff__content.is-active');
+   
+
     console.log(activeItem);
 
     if(activeItem) {
@@ -23,6 +25,7 @@ team.addEventListener('click', function (evt) {
         currentElementList.classList.add('is-active');
         let currentText = currentElementList.querySelector(".staff__hidden");
         currentText.style.height = currentText.scrollHeight + "px"
+        
       }
   }
 });

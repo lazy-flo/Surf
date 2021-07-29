@@ -527,6 +527,10 @@ a {
   }
 }
 
+.reviews-section {
+  position: relative;
+}
+
 .reviews__card {
   background: #F8FAF9;
   padding: 2.625rem;
@@ -1305,11 +1309,17 @@ a {
   display: flex;
   justify-content: center;
 }*/
+.staff_content {
+  position: relative;
+}
+
 .staff__link:after {
   content: url(../img/icon/all/triangle.svg);
+  /*display: block;*/
   width: 0.5625rem;
   height: 0.5625rem;
   margin-left: 0.25rem;
+  /*transform: rotate(180deg);*/
 }
 
 .staff__title {
@@ -1376,4 +1386,48 @@ a {
 
 .bx-prev {
   margin-right: 20px;
+}
+
+.is-active .staff__link:after {
+  transform: rotate(180deg);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* right: 0; */
+  /* bottom: 0; */
+  display: flex;
+  /* width: 100%; */
+  /* height: 100%; */
+  justify-content: center;
+  align-items: center;
+  /* background: #313131; */
+  z-index: 100;
+  display: none;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 310px;
+  height: 180px;
+}
+
+.modal__content {
+  margin-bottom: 35px;
+  color: black;
+}
+
+.form__input.input-error {
+  border-color: red;
+}
+
+.modal.error {
+  color: red;
 }

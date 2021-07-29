@@ -19,3 +19,4 @@ $('.interactive-avatar__link').click(e => {
 
 
 });
+

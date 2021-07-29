@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
   <link rel="stylesheet" href="./css/main.css">
 
@@ -542,15 +544,16 @@
         <div class="section-container container">
           <h2 class="order-section__title section__title">Закажите доску</h2>
           <form class="form">
+            <input type="hidden" name="to" value= "lazy.flo@gmail.com">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="name" class="form__input">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="phone" class="form__input">
                 </label>
               </div>
               <div class="form__row">
@@ -583,7 +586,7 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea class="form__input form__input--textarea" name="comment"></textarea>
                 </label>
               </div>
               <div class="form__controls">
@@ -613,7 +616,9 @@
           </form>
         </div>
 
+
       </section>
+
       <section class="map section" id="map-anchor">
         <div class="map-block">
         </div>
@@ -707,6 +712,15 @@
       </ul>
     </nav>
   </div>
+
+  <div id="modal" class="modal">
+    <div class="modal__container">
+      <div class="modal__content">Сообщение отправлено</div>
+      <div class="modal__btn-container">
+        <a href="#" class="btn js-btn-submit">ЗАКРЫТЬ</a>
+      </div>
+    </div>
+  </div>
   <div class="fullscreen-menu" id="modalMenu">
     <a href="#" class="fullscreen-menu__close">
       <svg class="fullscreen-menu__img">
@@ -741,20 +755,21 @@
 
   </div>
 
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script>$(document).ready(function () {
+    $('.bxslider').bxSlider()
+    
+  });
+  </script>
+
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>-->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 
   <script src="./one.js"></script>
   <script src="./accord.js"></script>
   <script src="./switcher.js"></script>
-  <script>$(document).ready(function () {
-      $('.bxslider').bxSlider({
-        autoControls: true,
-      })
-      
-    });
-    </script>
+  <script src="./modal.js"></script>
+
 
 
 
