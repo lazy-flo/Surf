@@ -464,37 +464,69 @@
         <div class="section__container container">
           <h1 class="reviews-section__title section__title">ОТЗЫВЫ</h1>
           <div class="reviews">
-            <div class="reviews__card">
-              <div class="reviews__card-inner">
-                <div class="reviews__avatar">
-                  <img src="./img/reviews/user-one.jpg" alt="" class="reviews__icon">
-                </div>
-                <article class="reviews__content">
-                  <h2 class="reviews__subtitle">Лучший дизайн</h2>
-                  <div class="reviews__desc">
-                    <p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала
-                      себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и
-                      комментарии. В
-                      итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
-                    </p>
+
+              <ul class="reviews__card">
+                <li class="reviews__card-inner active" data-pair = "one">
+                  <div class="reviews__avatar">
+                    <img src="./img/reviews/user-one.jpg" alt="" class="reviews__icon">
                   </div>
-                  <div class="reviews__author">Ольга Макарова</div>
-                </article>
-              </div>
-            </div>
+                  <article class="reviews__content">
+                    <h2 class="reviews__subtitle">Лучший дизайн</h2>
+                    <div class="reviews__desc">
+                      <p>Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала
+                        себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и
+                        комментарии. В
+                        итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
+                      </p>
+                    </div>
+                    <div class="reviews__author">Ольга Макарова</div>
+                  </article>
+                </li>
+                <li class="reviews__card-inner" data-pair = "two">
+                  <div class="reviews__avatar">
+                    <img src="./img/reviews/user-two.png" alt="" class="reviews__icon">
+                  </div>
+                  <article class="reviews__content">
+                    <h2 class="reviews__subtitle">Нереальная скорость</h2>
+                    <div class="reviews__desc">
+                      <p>Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
+                        Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+                       
+                      </p>
+                    </div>
+                    <div class="reviews__author">Марк Брюлов</div>
+                  </article>
+                </li>
+                <li class="reviews__card-inner" data-pair = "three">
+                  <div class="reviews__avatar">
+                    <img src="./img/reviews/user-three.jpg" alt="" class="reviews__icon">
+                  </div>
+                  <article class="reviews__content">
+                    <h2 class="reviews__subtitle">Устойчивость и безопасность</h2>
+                    <div class="reviews__desc">
+                      <p>Я заказывал доски для своих детей. Мне было важно, чтобы они были устойчивые, так как безопасность детей на первом месте. Доски были изготовлены по индивидуальным замерам с учетом роста и веса каждого ребенка. Теперь дети катаются и им нравится!
+                      </p>
+                    </div>
+                    <div class="reviews__author">Василий Поперечный</div>
+                  </article>
+                </li>
+              </ul>
+
+
+
             <ul class="reviews__switcher">
-              <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                <a href="" class="interactive-avatar__link">
+              <li class="reviews__switcher-item interactive-avatar active">
+                <a href="" class="interactive-avatar__link"data-open = "one">
                   <img src="./img/reviews/user-one.jpg" alt="" class="interactive-avatar__photo">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
-                <a href="" class="interactive-avatar__link">
+                <a href="" class="interactive-avatar__link" data-open = "two">
                   <img src="./img/reviews/user-two.png" alt="" class="interactive-avatar__photo">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
-                <a href="" class="interactive-avatar__link">
+                <a href="" class="interactive-avatar__link" data-open = "three">
                   <img src="./img/reviews/user-three.jpg" alt="" class="interactive-avatar__photo">
                 </a>
               </li>
@@ -709,8 +741,13 @@
 
   </div>
 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+
   <script src="./one.js"></script>
   <script src="./accord.js"></script>
+  <script src="./switcher.js"></script>
   <script>$(document).ready(function () {
       $('.bxslider').bxSlider({
         autoControls: true,

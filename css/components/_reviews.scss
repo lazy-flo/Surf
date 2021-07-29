@@ -1,7 +1,15 @@
+
 .reviews__card {
   background: #F8FAF9;
   padding: rem(42px);
   margin-bottom: rem(18px);
+  position: relative;
+
+
+  &-active {
+    opacity: 1;
+  }
+  
 
   @include smallPhone {
     padding: rem(10px) rem(4px);
@@ -9,6 +17,13 @@
 }
 .reviews__card-inner {
   display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  min-height: rem(280px);
 
   @include tablets {
     flex-direction: column;
@@ -16,6 +31,10 @@
     align-items: center;
 
   }
+}
+.reviews__card-inner.active {
+  opacity: 1;
+  position: static;
 }
 
 .reviews__avatar{

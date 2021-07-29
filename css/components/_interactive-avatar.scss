@@ -9,10 +9,10 @@
   align-items: center;*/
   position: relative;
 
-  &--active {
-    border-color: $yellow;
+}
 
-  }
+.interactive-avatar.active {
+  border-color: $yellow;
 }
 .interactive-avatar__link {
   display: block;
