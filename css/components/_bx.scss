@@ -1,0 +1,25 @@
+
+
+ .bx-wrapper{
+  box-shadow: none;
+  border: none;
+  background: #F8FAF9;
+  max-width: none;
+ }
+ 
+
+ .bx-wrapper .bx-controls-direction a {
+right: -3%;
+
+@include tablets {
+  top: 25%;
+  right: 0;
+}
+
+ }
+ .bx-prev {
+   margin-right: 20px;
+ }
+.bx-pager {
+  display: none;
+}

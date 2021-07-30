@@ -803,6 +803,10 @@ a {
   }
 }
 
+.form__input.input-error {
+  border-color: red;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
@@ -1306,8 +1310,8 @@ a {
 }
 
 /*.staff__visible {
-  display: flex;
-  justify-content: center;
+ display: flex;
+ justify-content: center;
 }*/
 .staff_content {
   position: relative;
@@ -1368,6 +1372,10 @@ a {
   margin-bottom: 0.25rem;
 }
 
+.is-active .staff__link:after {
+  transform: rotate(180deg);
+}
+
 .bx-wrapper {
   box-shadow: none;
   border: none;
@@ -1391,10 +1399,6 @@ a {
 
 .bx-pager {
   display: none;
-}
-
-.is-active .staff__link:after {
-  transform: rotate(180deg);
 }
 
 .modal {
@@ -1427,10 +1431,6 @@ a {
 .modal__content {
   margin-bottom: 35px;
   color: black;
-}
-
-.form__input.input-error {
-  border-color: red;
 }
 
 .modal.error .modal__content {
