@@ -170,7 +170,9 @@ right: -3%;
  .bx-prev {
    margin-right: 20px;
  }
-
+.bx-pager {
+  display: none;
+}
 
  .is-active .staff__link:after {
   transform: rotate(180deg);
@@ -213,6 +215,6 @@ right: -3%;
 
 }
 
-.modal.error {
+.modal.error .modal__content{
   color: red;
 }

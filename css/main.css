@@ -1388,6 +1388,10 @@ a {
   margin-right: 20px;
 }
 
+.bx-pager {
+  display: none;
+}
+
 .is-active .staff__link:after {
   transform: rotate(180deg);
 }
@@ -1428,6 +1432,6 @@ a {
   border-color: red;
 }
 
-.modal.error {
+.modal.error .modal__content {
   color: red;
 }
