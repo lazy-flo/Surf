@@ -1314,10 +1314,11 @@ a {
 }
 
 .staff__link:after {
-  content: url(../img/icon/all/triangle.svg);
-  /*display: block;*/
-  width: 0.5625rem;
-  height: 0.5625rem;
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icon/all/triangle.svg);
+  width: 0.5rem;
+  height: 0.375rem;
   margin-left: 0.25rem;
   /*transform: rotate(180deg);*/
 }

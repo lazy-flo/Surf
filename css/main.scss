@@ -97,10 +97,11 @@ $z-fullscreen-menu: 120;
 .staff__link  {
 
   &:after {
-    content: url(../img/icon/all/triangle.svg);
-    /*display: block;*/
-    width: rem(9px);
-    height: rem(9px);
+    content: "";
+    display: inline-block;
+    background-image: url(../img/icon/all/triangle.svg);
+    width: rem(8px); 
+    height: rem(6px);
     margin-left: rem(4px);
     /*transform: rotate(180deg);*/
 
