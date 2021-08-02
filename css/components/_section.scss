@@ -19,6 +19,10 @@
   margin-bottom: rem(32px);
   text-align: center;
 
+  &--white {
+    color: white;
+  }
+
   @include phone {
     font-size: rem(40px);
   }

@@ -383,6 +383,9 @@ a {
   margin-bottom: 2rem;
   text-align: center;
 }
+.section__title--white {
+  color: white;
+}
 @media screen and (max-width: 480px) {
   .section__title {
     font-size: 2.5rem;
@@ -1442,4 +1445,120 @@ a {
 
 .modal.error .modal__content {
   color: red;
+}
+
+.menu-section {
+  position: relative;
+  background: url(../img/menu/bg-menu.jpg) center center/cover no-repeat;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menu-section__title {
+  /*color: white;*/
+  position: absolute;
+  top: 12%;
+  left: 10%;
+}
+@media screen and (max-width: 768px) {
+  .menu-section__title {
+    left: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-section__title {
+    font-size: 1.875rem;
+  }
+}
+
+.menu-acco {
+  display: flex;
+  margin: 0;
+  /*  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;*/
+  z-index: 1;
+  justify-content: flex-end;
+}
+
+.menu-acco__item {
+  display: flex;
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__item.active {
+    flex-shrink: 0;
+    order: 1;
+    width: 100%;
+  }
+}
+.menu-acco__item.active .menu-acco__link-title {
+  color: #FEDB3F;
+}
+.menu-acco__item.active .menu-acco__content {
+  width: 33.125rem;
+}
+
+.menu-acco__link {
+  background-image: url(../img/menu/bg-longboard.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 6.375rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.menu-acco__link--bg--shortboard {
+  background-image: url(../img/menu/bg-shortboard.jpg);
+}
+.menu-acco__link--bg--softboard {
+  background-image: url(../img/menu/bg-softboard.jpg);
+}
+
+.menu-acco__link-title {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding-top: 2.5rem;
+}
+
+.menu-acco__content {
+  overflow: hidden;
+  background: #333537;
+  opacity: 0.9;
+  width: 0;
+  position: relative;
+}
+
+.menu-acco__text {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 3.125rem;
+  padding-left: 2.375rem;
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__text {
+    padding-top: 5.625rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.menu-acco__btn-img {
+  width: 0.875rem;
+  height: 0.875rem;
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  fill: white;
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__btn-img {
+    top: 4%;
+    right: 5%;
+  }
 }

@@ -62,6 +62,7 @@ if(isValid) {
 
   request.done(data => {
     modalContent.text(data.message);
+    form.trigger("reset");
 
   });
 
@@ -89,3 +90,4 @@ $('.js-btn-submit').click(e => {
 
   $.fancybox.close()
 })
+
