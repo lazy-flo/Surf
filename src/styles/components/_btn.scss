@@ -1,0 +1,27 @@
+.btn {
+  color: black;
+  font-weight: bold;
+font-size: rem(16px);
+line-height: rem(18px);
+text-transform: uppercase;
+background: #FEDB3F;
+padding: rem(21px) rem(41px);
+border-radius: rem(100px);
+border: none;
+transition: 0.3s;
+
+
+   &:hover {
+  background: #FFD517;
+  }
+  &--col--transparent {
+    background: transparent;
+    color: #fff;
+    &:hover {
+      background: transparent;
+      color: $yellow;
+    }
+  
+
+  }
+}

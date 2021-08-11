@@ -1,0 +1,52 @@
+.market {
+  background: #F8FAF9;
+  display: flex;
+
+}
+.market__slider {
+ 
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+}
+.market__arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+z-index: 2;
+display: block;
+
+@include tablets {
+  top: 25%;
+  
+}
+
+  &--pos--right {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+
+    @include tablets {
+      right: 5%;
+    }
+
+  }
+  &--pos--left {
+    left: 0;
+
+    @include tablets {
+      left: 5%;
+    }
+
+  }
+
+}
+.market__arrow-img {
+  width: rem(14px);
+  height: rem(28px);
+  fill: transparent;
+}
+/*.market__item {
+  margin: 0 rem(34px);
+ 
+}*/

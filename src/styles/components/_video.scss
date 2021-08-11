@@ -1,0 +1,29 @@
+#player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video__player {
+  position: relative;
+ 
+}
+.video__player-img{
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+ 
+}
+.video__player-img--hidden {
+  opacity: 0;
+ }
+
+.video__toolbar {
+  background: #404040;
+  display: flex;
+  height: rem(34px);
+  padding: rem(8px) rem(16px);
+  margin-top: rem(-8px);
+}

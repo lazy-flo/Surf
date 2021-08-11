@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablets {
+    background: #1968B1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: rem(30px) rem(26px);
+   
+  }
+
+
+}
+
+.header__contacts {
+  @include tablets {
+    display: none;
+  }
+}

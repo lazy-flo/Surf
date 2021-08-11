@@ -1,0 +1,24 @@
+.socials {
+  display: flex;
+ /* justify-content: center;*/
+  align-items: center;
+  margin: 0;
+}
+.socials__item {
+  margin-right: rem(14px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__pic {
+  width: rem(24px);
+  height: rem(24px);
+  fill: #B3B3B3;
+  transition: 0.3s;
+
+  &:hover {
+    fill: black;
+  }
+}

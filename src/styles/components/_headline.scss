@@ -1,0 +1,58 @@
+
+.headline {
+  text-align: center;
+}
+.headline__title {
+  margin-bottom: rem(17px);
+}
+.headline__subtitle {
+  padding: 0 27%;
+  margin-bottom: rem(49px);
+
+  @include phone {
+    padding: 0;
+  }
+
+}
+.headline__list {
+ display: flex;
+
+ @include phone {
+   flex-direction: column;
+   margin: 0;
+ }
+
+}
+
+.headline__item {
+  flex: 1;
+  padding: 0 2%;
+  position: relative;
+
+  @include phone {
+    padding: 0;
+    margin-bottom: rem(30px);
+  }
+  
+  &:before {
+    content: url(../img/icon/separator.svg);
+    position: absolute;
+    top: 17%;
+    right: 0;
+    transform: translateX(50%);
+
+    @include tablets {
+      display: none;
+    } 
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+    &:before {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.menu-section {
+  position: relative;
+  background: url(../img/menu/bg-menu.jpg) center center / cover no-repeat;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.menu-section__title {
+  /*color: white;*/
+  position: absolute;
+  top: 12%;
+  left: 10%;
+
+  @include tablets {
+    left: 5%;
+  }
+@include phone {
+  font-size: rem(30px);
+}
+}
