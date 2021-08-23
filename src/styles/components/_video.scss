@@ -14,6 +14,11 @@
   top: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  @include phone {
+    width: rem(40px);
+    
+  }
  
 }
 .video__player-img--hidden {

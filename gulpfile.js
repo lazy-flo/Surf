@@ -22,21 +22,21 @@ sass.compiler = require('node-sass');
 
 task("clean", () => {
   
-  return src("${DIST_PATH}/**/*", { read: false }).pipe(rm());
+  return src(`${DIST_PATH}/**/*`, { read: false }).pipe(rm());
 });
 
 
 task("copy", () => {
-  return src('${SRC_PATH}/styles/*.scss').pipe(dest(DIST_PATH));
+  return src(`${SRC_PATH}/styles/*.scss`).pipe(dest(DIST_PATH));
 });
 
 
 task("copy:html", () => {
-  return src('${SRC_PATH}/*.html').pipe(dest(DIST_PATH)).pipe(reload({stream: true}));
+  return src(`${SRC_PATH}/*.html`).pipe(dest(DIST_PATH)).pipe(reload({stream: true}));
 });
 
 task("copy:images", () => {
-  return src('${SRC_PATH}/img/**/*.{jpg,png,svg,mp4}').pipe(dest('dist/img')).pipe(reload({stream: true}));
+  return src(`${SRC_PATH}/img/**/*.{jpg,png,svg,mp4}`).pipe(dest('dist/img')).pipe(reload({stream: true}));
 });
 
 
